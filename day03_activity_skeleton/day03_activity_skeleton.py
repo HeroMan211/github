@@ -1,5 +1,5 @@
 """
-Day 3 Activity: Use lambda and .apply() to clean a dataset.
+day 3 Activity: Use lambda and .apply() to clean a dataset.
 Tasks:
 1) Clean price (remove $ and commas)
 2) Fill missing quantity with 0
