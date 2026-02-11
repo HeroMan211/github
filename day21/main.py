@@ -27,7 +27,6 @@ import numpy as np
 df = pd.read_csv('day21_housing.csv')
 
  
-print(df)
 # TODO: Create price_per_sqft with safe division
 df['price_per_sqft'] = df['price'] / (df['sqft'].replace(0, np.nan))  
 # TODO: Create additional domain features
