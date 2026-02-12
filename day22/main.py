@@ -21,11 +21,10 @@ import pandas as pd
 
 df = pd.read_csv("day22_interactions.csv")
 
- 
-
 # TODO: Create interaction features
 df["multiplicative"] = df["feature1"] * df["feature2"]
 df["additive"] = df["feature1"] + df["feature2"]
+
 # TODO: Compute correlations with target
 
 correlations = df.corr(numeric_only=True)["target"]
