@@ -14,11 +14,10 @@ import matplotlib.pyplot as plt
 from sklearn.preprocessing import PolynomialFeatures
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import cross_val_score
-
-# 1️⃣ Load data
+for i in 10:
 df = pd.read_csv("day23_poly.csv")
 
-X = df[['x']]          # Must be 2D
+X = df[['x']]         
 y = df['y']
 
 print("Original shape:", X.shape)
