@@ -28,11 +28,11 @@ df = pd.read_csv("day31_seaborn.csv")
 
 # TODO: sns.histplot, sns.kdeplot, sns.boxplot, sns.countplot
 
-sns.histplot(data=df, x="value", hue="category", kde=True)
+sns.histplot(data=df, x="age", hue="segment", kde=True)
 plt.show()
-sns.kdeplot(data=df, x="value", hue="category")
+sns.kdeplot(data=df, x="age", hue="segment")
 plt.show()
-sns.boxplot(data=df, x="category", y="value")
+sns.boxplot(data=df, x="segment", y="age")
 plt.show()
-sns.countplot(data=df, x="category")
+sns.countplot(data=df, x="segment")
 plt.show()
